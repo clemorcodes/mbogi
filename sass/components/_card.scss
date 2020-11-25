@@ -1,0 +1,45 @@
+//CELEBRITIES CARDS IN THE BROWSE CELEBRITIES PAGE
+.cards {
+    display: grid;
+    //grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    column-gap: $padding-card;
+    row-gap: 3rem;
+
+    @media only screen and (max-width: $bp-small) {
+        grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+
+    }
+
+    &__item {
+        padding: $padding-card;
+
+
+        @media only screen and (max-width: $bp-small) {
+            padding: 0;
+    
+        }
+    }
+}
+
+.card {
+
+    &__details {
+        display: flex;
+        padding: 2rem;
+        flex-direction: column;
+        background-color: $color-grey-light-1;
+
+
+
+        &--name {
+            padding-bottom: 3rem;
+        }
+
+        &--price {
+            color: $color-search-icon;
+            font-weight: 800;
+        }
+
+    }
+}

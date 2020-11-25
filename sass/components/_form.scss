@@ -1,0 +1,54 @@
+//SEARCH CELEBRITY NAME
+.form {
+    flex: 0 0 33.333333333%;
+    width: 70%;
+    display: flex;
+    align-items: center;
+
+    @media only screen and (max-width: $bp-small) {
+        flex: 0 0 95%;
+        margin: 0 auto;
+    }
+
+    &__icon {
+        width: 2rem;
+        height: 2rem;
+    }
+    
+    &__input {
+        font-family: inherit;
+        font-size: inherit;
+        display: inline-block;
+        line-height: 1.5;
+        outline: none;
+        width: 100%;
+        color: $color-input;
+        background-color: $color-white;
+        padding: 0.6rem 1.2rem 0.6rem 3.8rem;
+        margin-left: -3.25rem;
+        border: 1px solid #ced4da;
+        border-radius: .25rem;
+        z-index: 1;
+
+        &:focus {
+            outline: none;
+            background-color: $color-white;
+        }
+
+        &::-webkit-input-placeholder {
+            font-weight: 100;
+        }
+    }
+
+    &__button {
+        border: none;
+        z-index: 2;
+        background-color: $color-white;
+
+        &:focus {
+            outline: none;
+            transform: translateY(2px);
+        }
+    }
+
+}

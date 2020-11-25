@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>
+      Mbogi | Get video shoutouts from your favourite celebrities in Kenya
+    </title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__items">
+        <!--logo-->
+        <a class="logo" href="../index.html">
+          <img
+            src="https://mbogi.co/static/images/logo_transparent.01845e56f390.png"
+            alt="logo"
+          />
+        </a>
+        <!--Main Navbar-->
+        <div class="browse__head">
+          <a
+            class="browse__head--link"
+            id="browse-head"
+            href="../celebrities/browse.html"
+            >Browse Celebrities</a
+          >
+        </div>
+        <!--<div class="toggle"></div>-->
+        <nav class="header__nav">
+          <ul class="nav">
+            <li class="nav__item nav__item--1">
+              <a class="nav__link nav__link--login" href="#">Login</a>
+            </li>
+            <li class="nav__item nav__item--2">
+              <a class="nav__link nav__link--register" href="#">Register</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="toggle"></div>
+      </div>
+    </header>
+
+    <!--CONTAINER-->
+    <div class="container">
+      <!--CELEBRITY DETAILS-->
+      <div class="celebrity">
+        <a href="Esther-Wahome.html" class="celebrity__image">
+          <img
+          src="../images/estherwahomekenya_20200814_004110_0.jpg"
+          alt="Esther Wahome Photo"/>
+        </a>
+        <div class="celebrity__details">
+          <div class="celebrity__details--name">
+            <h3 class="heading heading__primary celebrity__name">Esther Wahome</h3>
+            <p class="celebrity__description">
+                A multiple awards winning gospel musician, who has performed in several countrie across the globe. 
+                Has a music doctorate from breakthrough Bible university in America.,A conference speaker,A recipient of Kenya's state honours,medal and title HSC,(head of state commendation) 
+                Former Mrs.Kenya and year 2012 Mrs.Universe crown holder as 2nd runners up globally.
+            </p>
+          </div>
+          <div class="celebrity__details--types">
+
+            <!--FOR FANS-->
+            <div class="type fans">
+              <h5 class="heading heading__tertiary type__title fans__title">For fans</h5>
+              <p class="celebrity__details--description type__decription fans__description">
+                (Birthday, graduation, engagement video shoutouts)
+              </p>
+              <p class="type__price fans__price">Kes 500.00</p>
+              <button class="btn btn__fan">Book now</button>
+              <hr>
+            </div>
+
+            <!--FOR PROMOTIONAL-->
+            <div class="type promotion">
+              <h5 class="heading heading__tertiary type__title promotion__title">
+                Promotional videos
+              </h5>
+              <p class="celebrity__details--description type__decription promotion__description">
+                (Social media follow requests, product, services video
+                shoutouts)
+              </p>
+              <p class="type__price promotion__price">Kes 3000.00</p>
+              <button class="btn btn__promotion">Book now</button>
+              <hr>
+            </div>
+
+          </div>
+          <div class="celebrity__details--note">
+            <svg class="svg__icon svg__icon--error">
+                <use xlink:href="../images/sprite.svg#icon-error"></use>
+              </svg>
+            <p class="note__text"> When your order is ready, we shall notify you via SMS.It may take up to 5 days.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!--FOOTER-->
+    <footer class="footer">
+      <div class="footer__items">
+        <a class="footer__item footer__item--logo" href="../index.html">
+          <img
+            src="https://mbogi.co/static/images/logo_transparent.01845e56f390.png"
+            alt="logo"
+          />
+        </a>
+        <div class="footer__item">
+          <ul class="footer__item--nav">
+            <li class="footer__nav--item">
+              <a class="footer__nav--link" href="#">About</a>
+            </li>
+            <li class="footer__nav--item">
+              <a class="footer__nav--link" href="#">Contactinfo@mbogi.co</a>
+            </li>
+            <li class="footer__nav--item">
+              <a class="footer__nav--link" href="#">Terms of service</a>
+            </li>
+            <li class="footer__nav--item">
+              <a class="footer__nav--link" href="#">Privacy Policy</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__item footer__item--copyright">
+          <p>&copy;Mbogi.2020</p>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".toggle").click(function () {
+          $(".toggle").toggleClass("active");
+          $("nav").toggleClass("active");
+        });
+      });
+      window.addEventListener("scroll", function () {
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+      });
+    </script>
+  </body>
+</html>

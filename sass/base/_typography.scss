@@ -1,0 +1,46 @@
+ body {
+    font-family: $font-display;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 2.7rem;
+    color: $color-primary;
+
+    
+ }
+
+ .About__text {
+   line-height: 3rem;
+   color: rgba($color-black, .8);
+ }
+
+ //HEADINGS
+.heading {
+   color: $color-black;
+   //h2
+   &__main {
+      font-size: 3.4rem;
+      font-weight: 500;
+      line-height: 7.2rem;
+   }
+   //h3
+   &__primary {
+      font-size: 3.2rem;
+      line-height: 3.6rem;
+      font-weight: 500;
+   }
+
+   //h4
+   &__secondary {
+      font-size: 2.6rem;
+      line-height: 3.6rem;
+      font-weight: 400;
+   }
+
+   //h5
+   &__tertiary {
+      font-size: 2rem;
+      font-weight: 600;
+      line-height: 2.7rem;
+   }
+}
+

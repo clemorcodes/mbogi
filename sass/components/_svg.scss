@@ -1,0 +1,22 @@
+.svg__icon {
+    width: 2rem;
+    height: 2rem;
+    margin-bottom: 1rem;
+
+
+    &--search {
+        fill: $color-search-icon;
+    }
+    &--tell {
+        fill: $color-msg-icon;
+    }
+    &--video {
+        fill: $color-video-icon;
+    }
+
+    &--error {
+        fill: currentColor;
+        margin-bottom: 0 !important;
+        margin-right: .5rem;
+    }
+}

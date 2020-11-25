@@ -1,0 +1,47 @@
+// HEADER NAVIGATION 
+
+.nav {
+    display: flex;
+    align-items: center;
+    list-style: none;
+  
+    @media only screen and (max-width: $bp-small) {
+      display: none;
+    }
+  
+    &__item {
+      text-transform: uppercase;
+      transition: all .2s;
+  
+    }
+  
+    &__link {
+      &:link , &:visited {
+        display: inline-block;
+        text-align: center;
+        font-size: 1.3rem;
+        text-decoration: none;
+        border-radius: 0.6rem;
+        margin: 0.6rem;
+        transition: all .2s;
+  
+      }
+      &:hover {
+        box-shadow: $box-shadow;
+        transform: scale(1.01);
+      }
+      
+      &--login {
+        color: $color-tertiary-dark;
+        padding: 0.8rem 3.4rem;
+        border: 1px solid $color-tertiary-light;
+      }
+      &--register {
+        color: #ffffff;
+        padding: 0.9rem 3.4rem;
+        background-color: $color-tertiary-light;
+  
+      }
+    }
+   
+  }

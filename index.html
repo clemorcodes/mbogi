@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css"/>
+    <title>Mbogi | Get video shoutouts from your favourite celebrities in Kenya</title>
+  </head>
+  <body>
+
+    <header class="header">
+      <div class="header__items">
+        <!--logo-->
+      <a class="logo" href="index.html">
+        <img src="https://mbogi.co/static/images/logo_transparent.01845e56f390.png" alt="logo"/>
+      </a>
+      <!--Main Navbar-->
+      <div class="browse__head">
+        <a class="browse__head--link" id="browse-head" href="celebrities/browse.html">Browse Celebrities</a>
+      </div>
+      <!--<div class="toggle"></div>-->
+      <nav class="header__nav">
+        <ul class="nav">
+          <li class="nav__item nav__item--1">
+            <a class="nav__link nav__link--login" href="#">Login</a>
+          </li>
+          <li class="nav__item nav__item--2">
+            <a class="nav__link nav__link--register" href="#">Register</a>
+          </li>    
+        </ul>
+      </nav>
+      <div class="toggle"></div>
+      </div>
+    </header>
+
+    <div class="container">
+      <!--HOW IT WORKS-->
+    <section class="section-about">
+      <div class="About__heading">
+        <h2 class="heading heading__main">How it works</h2>
+      </div>
+      <div class="About">
+        <div class="About__column About__column--1">
+          <svg class="svg__icon svg__icon--search">
+            <use xlink:href="images/sprite.svg#icon-magnifying-glass"></use>
+          </svg>
+          <p class="About__text">
+            Browse through all celebrities and find one you want to request a
+            video shout-out from.
+          </p>
+        </div>
+  
+        <div class="About__column About__column--2">
+          <svg class="svg__icon svg__icon--tell">
+            <use xlink:href="images/sprite.svg#icon-bubble2"></use>
+          </svg>
+          <p class="About__text" >
+            Tell the celebrity what you want – birthday wish for your friend,
+            congratulatory note for your colleague or simply a shout-out for
+            yourself.
+          </p>
+        </div>
+  
+        <div class="About__column About__column--3">
+          <svg class="svg__icon svg__icon--video">
+            <use xlink:href="images/sprite.svg#icon-radio"></use>
+          </svg>
+          <p class="About__text">
+            The celebrity will read your request and create a short video just
+            for you! Download, share, show-off!
+          </p>
+        </div>
+      </div>
+      
+    </section>
+
+    <!--GALLERY-->
+
+    <section class="section-gallery">
+      <div class="gallery__heading">
+        <h2 class="heading heading__main">Featured Celebrities</h2>
+      </div>
+      <div class="gallery">
+        <div class="gallery__item gallery__item--1">
+          <a href="celebrity/Dj-Shiti.html"><img class="gallery__link" src="https://mbogi.co/media/profileimages/dj_shiti_mbogi.jpg" alt="dj-shiti"/></a>
+          <div class="gallery__details">
+            <p class="gallery__names">Dj Shiti</p>
+            <p class="gallery__career">Actor & comedian</p>
+          </div>
+        </div>
+  
+        <div class="gallery__item gallery__item--2">
+          <a href="celebrity/Desagu.html"><img class="gallery__link" src="images/henrydesagu_20200814_003125_0.jpg" alt="Ambition"/></a>
+          <div class="gallery__details">
+            <p class="gallery__names">Henry Desagu</p>
+            <p class="gallery__career">Comedian</p>
+          </div>
+        </div>
+  
+        <div class="gallery__item gallery__item--3">
+          <a href="celebrity/Alice-Kamande.html"><img class="gallery__link" src="https://mbogi.co/media/profileimages/WhatsApp_Image_2020-05-01_at_12.36.20_PM.jpeg" alt="Alice Kamande"/></a>
+          <div class="gallery__details">
+            <p class="gallery__names">Alice Kamande</p>
+            <p class="gallery__career">Music</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--BROWSE CELEBRITIES-->
+    <section class="section-browse">
+      <div class="browse__item">
+        <a class="browse__link " href="celebrities/browse.html">Browse all celebrities</a
+      </div>
+    </section>
+    </div>
+
+    <!--FOOTER-->
+    <footer class="footer">
+      <div class="footer__items">
+        <a class="footer__item footer__item--logo" href="index.html">
+          <img src="https://mbogi.co/static/images/logo_transparent.01845e56f390.png" alt="logo"/>
+        </a>
+        <div class="footer__item">
+          <ul class="footer__item--nav">
+            <li class="footer__nav--item"><a class="footer__nav--link" href="#">About</a></li>
+            <li class="footer__nav--item"><a class="footer__nav--link" href="mailto: info@mbogi.co;">Contactinfo@mbogi.co</a></li>
+            <li class="footer__nav--item"><a class="footer__nav--link" href="#">Terms of service</a></li>
+            <li class="footer__nav--item"><a class="footer__nav--link" href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer__item footer__item--copyright">
+          <p>&copy;Mbogi.2020</p>
+        </div>
+      </div>
+    </footer>
+    
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".toggle").click(function () {
+          $(".toggle").toggleClass("active");
+          $("nav").toggleClass("active");
+        });
+      });
+      window.addEventListener("scroll", function () {
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+      });
+    </script>
+  </body>
+</html>

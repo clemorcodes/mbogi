@@ -1,0 +1,178 @@
+//GRID IN THE INDIVIDUAL CELEBRITIES PAGE
+.celebrity {
+
+    width: 100%;
+    display: flex;
+    margin-top: 12rem;
+
+    @media only screen and (max-width: $bp-small) {
+        flex-direction: column;
+    }
+
+    &__image {
+        flex: 0 0 33.3333333333333%;
+        padding: 0 1.5rem 0 0;
+
+        &:hover {
+            opacity: .9;
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            padding: 0;
+        }
+    }
+
+    &__details {
+        display: flex;
+        flex-direction: column;
+
+
+        &--name {
+            padding: $padding-card;
+            margin-bottom: 1.5rem;
+
+            @media only screen and (max-width: $bp-small) {
+                padding: 0;
+            }
+        }
+
+        &--types {
+            display: flex;
+
+            @media only screen and (max-width: $bp-small) {
+                flex-direction: column;
+            }
+
+        }
+
+        &--note {
+            display: flex;
+            align-items: center;
+            margin: 2.4rem 0 1.6rem 0;
+            padding: 1.2rem 2rem;
+            color: $color-note;
+
+            p {
+                font-size: 1.4rem;
+            }
+        }
+
+        &--description {
+            font-size: 1.5rem;
+            line-height: 1.8rem;
+            margin-bottom: 1.6rem;
+        }
+    }
+    &__name {
+        padding-bottom: 1.5rem;
+    }    
+    
+}
+
+.note__text {
+    font-size: 1.4rem;
+}
+
+.type {
+    flex: 1;
+    padding: $padding-card;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &:last-child {
+        padding-right: 0 !important;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        padding: 0;
+    }
+
+    &__price {
+        margin-bottom: 1.6rem;
+        @include price; 
+    }
+
+    &__title {
+        margin-bottom: .8rem;
+    } 
+}
+
+.Instagram {
+    &__description {
+        height: 5.4rem;
+
+        @media only screen and (max-width: $bp-small) {
+            height: auto;
+        }
+    }
+}
+hr {
+    display: none;
+    margin-bottom: 2rem;
+    height: 0;
+    border: 0;
+    background-color: $color-white;
+    border-top: 1px solid rgba($color-black, .1);
+    opacity: 1;
+
+    @media only screen and (max-width: $bp-small) {
+        display: block;
+    }
+
+
+}
+
+
+
+
+
+//BOTH VIDEO TYPES
+/*.video__types {
+    grid-row: 1 / 2;
+    grid-column: col-start / span 3;
+    &--fan {
+        grid-column: col-start 2 / span 1;
+    }
+
+    &--promotion {
+        grid-column: col-start 3 / span 1;
+    }
+}
+/*
+    &__name {
+
+    }
+
+    &__description {
+
+    }
+}
+//BOTH VIDEO TYPES
+.video__types {
+
+    &--fan {
+
+    }
+
+    &--promotion {
+
+    }
+}
+
+//INDIVIDUAL VIDEO TYPE
+.video__type {
+
+    &--title {
+
+    }
+
+    &--description {
+
+    }
+
+    &--price {
+
+    }
+}
+*/ 

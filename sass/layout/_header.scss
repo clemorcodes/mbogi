@@ -1,0 +1,117 @@
+// HEADER
+.header {
+    width: 100%;
+    padding: 0.8rem 1.6rem;
+    margin: 0 auto;
+    position: fixed;
+    background-color: $color-white;
+    box-shadow: $box-shadow;
+    z-index: 100;
+
+    &__items {
+      display: flex;
+      width: 100%;
+      max-width: 114rem;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+      justify-content: space-between;
+      align-items: center;
+
+      @media only screen and (max-width: $bp-smallest) {
+        padding: 0;
+      }
+  
+    }
+}
+.logo {
+  width: 4rem;
+  margin-right: 8rem;
+
+  @media only screen and (max-width: $bp-smallest) {
+    margin-right: 5rem;
+  }
+}
+.logo img {
+  width: 4rem;
+  height: 6.7rem;
+}
+.browse__head {
+  margin-right: auto;
+
+
+  &--link {
+    position: relative;
+
+    &:link, &:visited {
+      display: inline-block;
+      text-decoration: none;
+      color: $color-primary;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: inline-block;
+      top: 3rem;
+      width: 0%;
+      height: 2px;
+      background-color: $color-tertiary-dark;
+      margin-bottom: 10px;
+      transition: transform .2s, width .4s cubic-bezier(1,-0.01,.42,1.02), background .4s;
+    }
+    &:hover::before {
+      width: 100%;
+    }
+
+    &:hover {
+      color: $color-tertiary-dark;
+    }
+  }
+}
+
+
+
+/*
+
+.toggle {
+  padding: 0 2rem;
+  color: #000000;
+  font-size: 3rem;
+  display: none;
+  cursor: pointer;
+}
+.sticky {
+  background-color: #ffffff;
+}
+
+@media only screen and (max-width: $bp-small) {
+  .toggle {
+      display: block;
+      width: 4rem;
+      height: 4rem;
+      margin: 1rem;
+      cursor: pointer;
+      text-align: center;
+    }
+    .toggle:before {
+      content: "\f0c9";
+      font-family: fontAwesome;
+      line-height: 4rem;
+    }
+    .toggle.active:before {
+      content: "\f00d";
+    }
+
+    .header__nav {
+        display: none;
+    }
+
+    nav.active {
+      display: block;
+      width: 100%;
+    }
+    nav.active ul {
+      display: inline-block;
+    }
+}
+*/
