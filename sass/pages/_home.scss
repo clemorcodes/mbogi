@@ -207,6 +207,10 @@
 
     &__type {
         grid-column: 1 / 2;
+
+        @media only screen and (max-width: $bp-small) {
+            display: none;
+        }
     }
 
     &__items {

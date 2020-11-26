@@ -123,6 +123,7 @@ body {
     padding: 0 1.5rem; }
     @media only screen and (max-width: 43.75em) {
       .cards__item {
+        width: 100%;
         padding: 0; } }
 
 .card__details {
@@ -659,6 +660,9 @@ hr {
       flex-direction: column; } }
   .categories__type {
     grid-column: 1 / 2; }
+    @media only screen and (max-width: 43.75em) {
+      .categories__type {
+        display: none; } }
   .categories__items {
     list-style: none;
     display: flex;
