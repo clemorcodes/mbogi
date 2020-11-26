@@ -80,10 +80,15 @@
 
 // FEATURED CELEBRITIES IN HOMEPAGE
 
-.section-gallery {
+.section__gallery {
     display: flex;
     flex-direction: column;
     margin-bottom: 4rem;
+
+    &--heading {
+        margin: 4rem auto 4rem auto;
+        text-align: center;
+    }
 }
 .gallery {
     display: flex;
@@ -91,6 +96,7 @@
     @media only screen and (max-width: $bp-small) {
         flex-direction: column;
     }
+
     &__item {
         flex: 1;
         padding: $padding-card;
@@ -109,9 +115,7 @@
         }
 
     }
-    &__heading {
-        margin: 4rem auto 4.8rem auto;
-    }
+    
     &__link {
 
         &:hover {
@@ -212,8 +216,8 @@
 
         @media only screen and (max-width: $bp-small) {
             flex-direction: row;
-            overflow: auto;
-            white-space: nowrap;
+            flex-wrap: wrap;
+            //white-space: nowrap;
         }
     }
 
