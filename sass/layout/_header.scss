@@ -61,6 +61,10 @@
     }
     &:hover::before {
       width: 100%;
+
+      @media only screen and (max-width: $bp-small) {
+        width: 0%;
+      }
     }
 
     &:hover {
