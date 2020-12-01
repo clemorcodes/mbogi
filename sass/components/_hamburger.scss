@@ -1,0 +1,48 @@
+@media only screen and (max-width: $bp-small) {
+  .ham {
+    position: absolute;
+    /* always keep ham on top of everything */
+    z-index: 1000;
+    top: 2.5rem;
+    right: 2rem;
+    width: 3.6rem;
+    height: 3.6rem;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    background-color: transparent;
+    /* show the menu image */
+    background-image: url("../../images/SVG/menu.svg");
+    background-size: 100%;
+  }
+
+  /* change ham image to close */
+  .showClose {
+    background-image: url("../../images/SVG/close.svg");
+    background-size: cover;
+  }
+
+  .header__nav {
+    position: absolute;
+    top: 9rem;
+    left: 0;
+    background: $color-white;
+    width: 100vw;
+    height: 20vh;
+    overflow: hidden;
+    color: white;
+    /* hide the menu above the screen by default */
+    transform: translateY(-10000%);
+    /* transition adds a little animation when sliding in and out the menu */
+    transition: transform 0.2s ease;
+    z-index: -1;
+  }
+
+  .showNav {
+    /* show the menu */
+    transform: translateY(0);
+  }
+}
+
+
+

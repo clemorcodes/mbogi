@@ -78,6 +78,44 @@ body {
     font-weight: 600;
     line-height: 2.7rem; }
 
+@media only screen and (max-width: 43.75em) {
+  .ham {
+    position: absolute;
+    /* always keep ham on top of everything */
+    z-index: 1000;
+    top: 2.5rem;
+    right: 2rem;
+    width: 3.6rem;
+    height: 3.6rem;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    background-color: transparent;
+    /* show the menu image */
+    background-image: url("../../images/SVG/menu.svg");
+    background-size: 100%; }
+  /* change ham image to close */
+  .showClose {
+    background-image: url("../../images/SVG/close.svg");
+    background-size: cover; }
+  .header__nav {
+    position: absolute;
+    top: 9rem;
+    left: 0;
+    background: #FFFFFF;
+    width: 100vw;
+    height: 20vh;
+    overflow: hidden;
+    color: white;
+    /* hide the menu above the screen by default */
+    transform: translateY(-10000%);
+    /* transition adds a little animation when sliding in and out the menu */
+    transition: transform 0.2s ease;
+    z-index: -1; }
+  .showNav {
+    /* show the menu */
+    transform: translateY(0); } }
+
 .btn {
   padding: 1.6rem 3.8rem;
   margin: 0.6rem;
@@ -514,7 +552,12 @@ hr {
   list-style: none; }
   @media only screen and (max-width: 43.75em) {
     .nav {
-      display: none; } }
+      flex-direction: column;
+      align-items: flex-start;
+      margin-left: 3rem; } }
+  @media only screen and (max-width: 31.25em) {
+    .nav {
+      margin-left: 1.8rem; } }
   .nav__item {
     text-transform: uppercase;
     transition: all .2s; }

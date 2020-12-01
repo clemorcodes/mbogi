@@ -46,7 +46,7 @@
             </li>
           </ul>
         </nav>
-        <div class="toggle"></div>
+        <button class="ham"></button>
       </div>
     </header>
 
@@ -138,22 +138,27 @@
       </div>
     </footer>
 
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.js"
-      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-      crossorigin="anonymous"
-    ></script>
     <script type="text/javascript">
-      $(document).ready(function () {
-        $(".toggle").click(function () {
-          $(".toggle").toggleClass("active");
-          $("nav").toggleClass("active");
-        });
-      });
-      window.addEventListener("scroll", function () {
-        var header = document.querySelector("header");
-        header.classList.toggle("sticky", window.scrollY > 0);
-      });
+      var navbar = document.querySelector(".header__nav")
+      var ham = document.querySelector(".ham")
+
+      // toggles hamburger menu in and out when clicking on the hamburger
+      function toggleHamburger(){
+        navbar.classList.toggle("showNav")
+        ham.classList.toggle("showClose")
+      }
+
+      ham.addEventListener("click", toggleHamburger)
+
+      // toggle when clicking on links
+
+      // METHOD 1
+      var menuLinks = document.querySelectorAll(".nav__link")
+      menuLinks.forEach( 
+        function(menuLink) { 
+          menuLink.addEventListener("click", toggleHamburger) 
+        }
+      )
     </script>
   </body>
 </html>
