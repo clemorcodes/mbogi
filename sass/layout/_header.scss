@@ -27,8 +27,12 @@
   width: 4rem;
   margin-right: 8rem;
 
-  @media only screen and (max-width: $bp-smallest) {
+  @media only screen and (max-width: $bp-small) {
     margin-right: 5rem;
+  }
+
+  @media only screen and (max-width: $bp-smallest) {
+    margin-right: 2rem;
   }
 }
 .logo img {
@@ -41,6 +45,8 @@
 
   &--link {
     position: relative;
+
+    
 
     &:link, &:visited {
       display: inline-block;

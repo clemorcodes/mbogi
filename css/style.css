@@ -468,9 +468,12 @@ hr {
 .logo {
   width: 4rem;
   margin-right: 8rem; }
-  @media only screen and (max-width: 31.25em) {
+  @media only screen and (max-width: 43.75em) {
     .logo {
       margin-right: 5rem; } }
+  @media only screen and (max-width: 31.25em) {
+    .logo {
+      margin-right: 2rem; } }
 
 .logo img {
   width: 4rem;
